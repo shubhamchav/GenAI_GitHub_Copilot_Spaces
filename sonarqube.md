@@ -1,28 +1,32 @@
-# 🔹 Basic SonarQube FAQs
+# Basic SonarQube FAQs
 
 ## Question: What is SonarQube?
 
 Answer:
 SonarQube is an open-source platform used for continuous inspection of code quality. It detects:
 
-- Bugs 🐞
-- Vulnerabilities 🔐
-- Code smells 🧹
+- Bugs
+- Vulnerabilities
+- Code smells
 
 It supports multiple languages like Java, JavaScript, Python, C#, etc.
+
+Keywords: sonar overview, code quality tool, sonar features
 
 ---
 
 ## Question: What is a Code Smell?
 
 Answer:
-A code smell is a maintainability issue that doesn't break functionality but makes code:
+A code smell is a maintainability issue that does not break functionality but makes code:
 
 - Hard to read
 - Hard to maintain
 - Error-prone in future
 
 Example: Duplicate code, long methods.
+
+Keywords: code smell definition, maintainability issue
 
 ---
 
@@ -34,10 +38,12 @@ A Quality Gate is a set of conditions that your code must meet before passing an
 Example conditions:
 
 - No new bugs
-- Code coverage > 80%
+- Code coverage greater than 80%
 - No critical vulnerabilities
 
-If conditions fail → build fails ❌
+If conditions fail, the build fails.
+
+Keywords: quality gate sonar, build conditions
 
 ---
 
@@ -48,7 +54,9 @@ A Quality Profile defines which rules are applied during analysis.
 
 - Language-specific
 - Customizable
-- Can enable/disable rules
+- Can enable or disable rules
+
+Keywords: quality profile sonar, rules configuration
 
 ---
 
@@ -56,15 +64,17 @@ A Quality Profile defines which rules are applied during analysis.
 
 Answer:
 
-| Type          | Meaning                                  |
-|---------------|------------------------------------------|
-| Bug           | Logic error causing wrong behavior       |
-| Vulnerability | Security risk (e.g., SQL injection)      |
-| Code Smell    | Maintainability issue                    |
+Type | Meaning
+-----|--------
+Bug | Logic error causing wrong behavior
+Vulnerability | Security risk (for example, SQL injection)
+Code Smell | Maintainability issue
+
+Keywords: bug vs vulnerability vs code smell
 
 ---
 
-# 🔹 Setup & Architecture Questions
+# Setup and Architecture Questions
 
 ## Question: How does SonarQube work internally?
 
@@ -76,50 +86,56 @@ SonarQube follows this flow:
 3. Server processes and stores results
 4. UI displays issues, metrics, and reports
 
+Keywords: sonar workflow, sonar architecture
+
 ---
 
 ## Question: What is SonarScanner?
 
 Answer:
-A CLI tool that:
+SonarScanner is a CLI tool that:
 
 - Analyzes source code
-- Sends results to SonarQube server
+- Sends results to the SonarQube server
+
+Keywords: sonar scanner, code analysis tool
 
 ---
 
 ## Question: What database does SonarQube use?
 
 Answer:
-Supports:
+SonarQube supports the following databases:
 
 - PostgreSQL (recommended)
 - MySQL (deprecated since SonarQube 7.9)
-- Oracle / SQL Server
+- Oracle
+- Microsoft SQL Server
+
+Keywords: sonar database, supported database, sonar db
 
 ---
 
 ## Question: Can SonarQube run locally?
 
 Answer:
-Yes 👍  
-You can run it locally using:
+Yes, SonarQube can run locally using:
 
 - ZIP installation
 - Docker
 
-Or use the hosted cloud alternative:
+You can also use SonarCloud as a hosted alternative.
 
-- SonarCloud (no self-hosting required)
+Keywords: sonar local setup, sonar docker
 
 ---
 
-# 🔹 CI/CD Integration
+# CI/CD Integration
 
 ## Question: How to integrate SonarQube with CI/CD?
 
 Answer:
-Common integrations:
+Common integrations include:
 
 - Jenkins
 - GitHub Actions
@@ -131,14 +147,18 @@ Steps:
 2. Configure token
 3. Add scan step in pipeline
 
+Keywords: sonar ci cd, sonar integration
+
 ---
 
 ## Question: What is sonar-project.properties?
 
 Answer:
-A config file that defines:
+It is a configuration file that defines:
 
 - Project key
 - Source path
 - Language
 - Server URL
+
+Keywords: sonar config file, sonar properties
