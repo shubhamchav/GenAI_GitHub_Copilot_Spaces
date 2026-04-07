@@ -1,8 +1,8 @@
 # 🔹 Basic SonarQube FAQs
 
-## 1. What is SonarQube?
+## Question: What is SonarQube?
 
-**Answer:**
+Answer:
 SonarQube is an open-source platform used for continuous inspection of code quality. It detects:
 
 - Bugs 🐞
@@ -13,9 +13,9 @@ It supports multiple languages like Java, JavaScript, Python, C#, etc.
 
 ---
 
-## 2. What is a Code Smell?
+## Question: What is a Code Smell?
 
-**Answer:**
+Answer:
 A code smell is a maintainability issue that doesn't break functionality but makes code:
 
 - Hard to read
@@ -26,9 +26,9 @@ Example: Duplicate code, long methods.
 
 ---
 
-## 3. What is a Quality Gate?
+## Question: What is a Quality Gate?
 
-**Answer:**
+Answer:
 A Quality Gate is a set of conditions that your code must meet before passing analysis.
 
 Example conditions:
@@ -41,9 +41,9 @@ If conditions fail → build fails ❌
 
 ---
 
-## 4. What is a Quality Profile?
+## Question: What is a Quality Profile?
 
-**Answer:**
+Answer:
 A Quality Profile defines which rules are applied during analysis.
 
 - Language-specific
@@ -52,7 +52,9 @@ A Quality Profile defines which rules are applied during analysis.
 
 ---
 
-## 5. Difference between Bug, Vulnerability, and Code Smell?
+## Question: What is the difference between Bug, Vulnerability, and Code Smell?
+
+Answer:
 
 | Type          | Meaning                                  |
 |---------------|------------------------------------------|
@@ -64,9 +66,9 @@ A Quality Profile defines which rules are applied during analysis.
 
 # 🔹 Setup & Architecture Questions
 
-## 6. How does SonarQube work internally?
+## Question: How does SonarQube work internally?
 
-**Answer:**
+Answer:
 SonarQube follows this flow:
 
 1. Code is scanned using SonarScanner
@@ -76,9 +78,9 @@ SonarQube follows this flow:
 
 ---
 
-## 7. What is SonarScanner?
+## Question: What is SonarScanner?
 
-**Answer:**
+Answer:
 A CLI tool that:
 
 - Analyzes source code
@@ -86,9 +88,9 @@ A CLI tool that:
 
 ---
 
-## 8. What database does SonarQube use?
+## Question: What database does SonarQube use?
 
-**Answer:**
+Answer:
 Supports:
 
 - PostgreSQL (recommended)
@@ -97,10 +99,10 @@ Supports:
 
 ---
 
-## 9. Can SonarQube run locally?
+## Question: Can SonarQube run locally?
 
-**Answer:**
-Yes 👍
+Answer:
+Yes 👍  
 You can run it locally using:
 
 - ZIP installation
@@ -114,9 +116,9 @@ Or use the hosted cloud alternative:
 
 # 🔹 CI/CD Integration
 
-## 10. How to integrate SonarQube with CI/CD?
+## Question: How to integrate SonarQube with CI/CD?
 
-**Answer:**
+Answer:
 Common integrations:
 
 - Jenkins
@@ -131,9 +133,9 @@ Steps:
 
 ---
 
-## 11. What is sonar-project.properties?
+## Question: What is sonar-project.properties?
 
-**Answer:**
+Answer:
 A config file that defines:
 
 - Project key
