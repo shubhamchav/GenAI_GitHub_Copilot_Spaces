@@ -92,7 +92,7 @@ A CLI tool that:
 Supports:
 
 - PostgreSQL (recommended)
-- MySQL (deprecated)
+- MySQL (deprecated since SonarQube 7.9)
 - Oracle / SQL Server
 
 ---
@@ -101,11 +101,14 @@ Supports:
 
 **Answer:**
 Yes 👍
-You can run it using:
+You can run it locally using:
 
 - ZIP installation
 - Docker
-- Cloud (SonarCloud)
+
+Or use the hosted cloud alternative:
+
+- SonarCloud (no self-hosting required)
 
 ---
 
